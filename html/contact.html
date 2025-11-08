@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Club - Contact</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://kit.fontawesome.com/96e67bb0d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Campus Club</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="../index.html#events">Events</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact container">
+      <h1 class="contact-title">Contact US</h1>
+      <p class="contact-intro">Fill out the form below to ask questions or express interest in our club. You will receive notification after submitting the form to validate your request.</p>
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-field">
+          <label class="visually-hidden" for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Full Name" required />
+        </div>
+        <div class="form-field">
+          <label class="visually-hidden" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required />
+        </div>
+        <div class="form-field">
+          <label class="visually-hidden" for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">&copy; <span id="year">2025</span> All Rights Reserved.</div>
+  </footer>
+
+</body>
+</html>
