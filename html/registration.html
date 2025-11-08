@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+      <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Campus Club</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="event.html">Events</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+    <main>
+    <section class="registration container">
+  <h2 class="registration-title">Event Registration</h2>
+  <p class="registration-intro">
+    Confirm the event details, complete the form, and submit.
+  </p>
+
+  <div class="registration-form-wrapper">
+    <form class="registration-form">
+      <!-- First Name -->
+      <div class="form-field">
+        <label for="first-name" class="visually-hidden">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+      </div>
+
+      <!-- Last Name -->
+      <div class="form-field">
+        <label for="last-name" class="visually-hidden">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+      </div>
+
+      <!-- Year of Study -->
+      <div class="form-field">
+        <label for="year" class="visually-hidden">Year of Study</label>
+        <select id="year" name="year" required>
+          <option value="" disabled selected>Year of Study</option>
+          <option value="1">2020</option>
+          <option value="2">2021</option>
+          <option value="3">2022</option>
+          <option value="4">2023</option>
+          <option value="5">2024</option>
+          <option value="6">2025</option>
+          <option value="7">2026+</option>
+
+        </select>
+      </div>
+
+      <!-- Faculty/Department -->
+      <div class="form-field">
+        <label for="faculty" class="visually-hidden">Faculty/Department</label>
+        <input type="text" id="faculty" name="faculty" placeholder="Faculty/Department" required>
+      </div>
+
+      <!-- Email Address -->
+      <div class="form-field" style="grid-column: 1 / -1;">
+        <label for="email" class="visually-hidden">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <!-- Notes -->
+      <div class="form-field" style="grid-column: 1 / -1;">
+        <label for="notes"ually-hidden">Notes</label>
+        <textarea id="notes" name="notes" placeholder="Notes (Optional): dietary/accessibility needs, team preference etc."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-actions">
+        <button type="submit" class="btn">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">&copy; <span id="year">2025</span> All Rights Reserved</div>
+    </footer>
+</body>
+</html>
