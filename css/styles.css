@@ -5,7 +5,7 @@
   --purple-500: #7b47b4;
   --accent: #e68120; 
   --bg: #f5f3f8;
-  --card-bg: #ffffff;
+  --card-bg: #f1efeb;
   --muted: #666;
   --max-width: 68.75rem; 
 }
@@ -366,6 +366,51 @@ img, svg, video, canvas {
 
 .footer-inner {
   text-align: center;
+}
+
+/* Success Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 180ms ease, visibility 180ms ease;
+  z-index: 1000;
+}
+
+.modal.is-open { opacity: 1; visibility: visible; }
+
+.modal__card {
+  background: var(--purple-700);
+  color: #fff;
+  border-radius: 0.625rem;
+  width: min(22rem, 90vw);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 0.75rem 2rem rgba(0,0,0,0.2);
+}
+
+.modal__icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  color: var(--purple-700);
+  font-size: 2rem;
+}
+
+.modal__message {
+  font-size: 0.95rem;
+  line-height: 1.35;
 }
 
 

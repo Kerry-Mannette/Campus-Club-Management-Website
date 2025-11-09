@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registration</title>
     <link rel="stylesheet" href="../css/styles.css">
+     <script src="https://kit.fontawesome.com/96e67bb0d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
       <header class="site-header">
@@ -25,7 +26,7 @@
   </p>
 
   <div class="registration-form-wrapper">
-    <form class="registration-form">
+  <form class="registration-form" id="registrationForm" novalidate>
       <!-- First Name -->
       <div class="form-field">
         <label for="first-name" class="visually-hidden">First Name</label>
@@ -43,14 +44,7 @@
         <label for="year" class="visually-hidden">Year of Study</label>
         <select id="year" name="year" required>
           <option value="" disabled selected>Year of Study</option>
-          <option value="1">2020</option>
-          <option value="2">2021</option>
-          <option value="3">2022</option>
-          <option value="4">2023</option>
-          <option value="5">2024</option>
-          <option value="6">2025</option>
-          <option value="7">2026+</option>
-
+          <!-- Options populated by js/main.js -->
         </select>
       </div>
 
@@ -68,21 +62,28 @@
 
       <!-- Notes -->
       <div class="form-field" style="grid-column: 1 / -1;">
-        <label for="notes"ually-hidden">Notes</label>
+  <label for="notes" class="visually-hidden">Notes</label>
         <textarea id="notes" name="notes" placeholder="Notes (Optional): dietary/accessibility needs, team preference etc."></textarea>
       </div>
 
       <!-- Submit Button -->
       <div class="form-actions">
-        <button type="submit" class="btn">SUBMIT</button>
+        <button type="submit" class="btn primary">SUBMIT</button>
       </div>
     </form>
   </div>
 </section>
 </main>
-
+<!-- Success Modal -->
+<div class="modal" id="regSuccessModal" role="dialog" aria-modal="true" aria-labelledby="regSuccessTitle" aria-hidden="true">
+  <div class="modal__card">
+    <div class="modal__icon" aria-hidden="true"><i class="fa-solid fa-check"></i></div>
+    <p id="regSuccessTitle" class="modal__message">Your information was successfully processed and submitted!</p>
+  </div>
+</div>
     <footer class="site-footer">
         <div class="container footer-inner">&copy; <span id="year">2025</span> All Rights Reserved</div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
